@@ -1,6 +1,16 @@
 package main.java.assignment.models;
 
+/**
+ * The type Manufactured item.
+ */
 public class ManufacturedItem extends Item{
+  /**
+   * Instantiates a new Manufactured item.
+   *
+   * @param name     the name
+   * @param price    the price
+   * @param quantity the quantity
+   */
   public ManufacturedItem(String name,int price,int quantity){
     super(name, price, quantity);
     salesTax=12.5*price*0.01;

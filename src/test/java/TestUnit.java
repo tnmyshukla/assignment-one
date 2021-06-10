@@ -20,9 +20,8 @@ public class TestUnit {
     }
     @Test
     public void testPriceValues(){
-
         assertEquals(20,item.getPrice());
-            }
+    }
     @Test
     public void testQuantityValues(){
 
@@ -69,8 +68,5 @@ public class TestUnit {
         String[] temp={"-type","raw","-name","-rubber","-price","10.25"};
         assertThrows(InvalidArgumentException.class,new CommandLineArgumentParser().getItem(temp));
     }
-
-
-
 
 }

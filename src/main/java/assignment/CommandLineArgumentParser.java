@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+/**
+ * The type Command line argument parser.
+ */
 public class CommandLineArgumentParser {
   private void validateMinimumArguments(final ArrayList<String> args){
     if(args.size()<=3){
@@ -57,6 +60,14 @@ public class CommandLineArgumentParser {
     validatePriceAndQuantity(args);
     validateTypeOfItem(args);
   }
+
+  /**
+   * Gets item.
+   *
+   * @param args the args
+   * @return the item
+   * @throws InvalidArgumentException the invalid argument exception
+   */
   public Item getItem(String[] args) throws InvalidArgumentException{
     final ArrayList<String> argsList = new ArrayList<>(Arrays.asList(args));
     validate(argsList);

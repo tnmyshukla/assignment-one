@@ -6,7 +6,15 @@ import main.java.assignment.models.Item;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * The type Item manager.
+ */
 public class ItemManager {
+  /**
+   * Start manager.
+   *
+   * @param args the args
+   */
   void startManager(String[] args){
     try{
       Item item=new CommandLineArgumentParser().getItem(args);
@@ -18,6 +26,10 @@ public class ItemManager {
       System.exit(1);
     }
   }
+
+  /**
+   * Check for new item.
+   */
   public void checkForNewItem(){
     System.out.println("Do you want to enter details of any other item (y/n):");
     final Scanner scan=new Scanner(System.in);
